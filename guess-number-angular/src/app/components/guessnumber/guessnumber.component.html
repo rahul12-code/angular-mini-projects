@@ -1,0 +1,14 @@
+<div>
+  <p>Guess a Number between 0 and 100</p>
+  <input 
+    type="text" 
+    placeholder="Guess a number"
+    name="guessnumber" 
+    [(ngModel)]="guessnumber" />
+   <app-buttons
+   (resetClick)="handleResetClick()"
+   (checkClick)="handleCheckClick()"
+   ></app-buttons>
+   {{displayContent}}
+
+</div>

@@ -1,0 +1,14 @@
+<div>
+  <p>Connect group of 2 words by clicking on related words</p>
+
+  <div class="word-connect">
+    <button 
+      *ngFor="let word of separateWords" 
+      (click)="handleWordClick(word)">{{ word }}</button>
+  </div>
+
+  <p>
+    Attempts:<span [ngStyle]="{ 'font-weight': 'bold' }">{{ count }}</span>
+  </p>
+  <button (click)="handleReset()">Reset</button>
+</div>

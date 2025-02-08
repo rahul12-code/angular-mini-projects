@@ -1,0 +1,18 @@
+
+<div [ngStyle]="{'font-size': '30px'}">
+    {{minutes}}:{{seconds}}:{{milliseconds}}
+</div>
+<app-buttons
+    (startClick)="handleStartClick()"
+    (stopClick)="handleStopClick()"
+    (resetClick)="handleResetClick()"
+
+></app-buttons>
+
+<!-- <div>
+    <button (click)="handleStartClick()" >START</button>
+    <button (click)="handleStopClick()">STOP</button>
+    <button (click)="handleResetClick()">RESET</button>
+</div> -->
+
+
